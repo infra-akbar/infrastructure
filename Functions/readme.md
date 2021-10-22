@@ -1,0 +1,43 @@
+<!-- BEGIN_TF_DOCS -->
+## Requirements
+
+No requirements.
+
+## Providers
+
+| Name | Version |
+|------|---------|
+| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | n/a |
+
+## Modules
+
+No modules.
+
+## Resources
+
+| Name | Type |
+|------|------|
+| [azurerm_app_service_virtual_network_swift_connection.function](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/app_service_virtual_network_swift_connection) | resource |
+| [azurerm_function_app.function](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/function_app) | resource |
+| [azurerm_storage_account.sa](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/storage_account) | resource |
+| [azurerm_app_service_plan.asp](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/app_service_plan) | data source |
+| [azurerm_subnet.subnet](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/subnet) | data source |
+
+## Inputs
+
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_appplan_name"></a> [appplan\_name](#input\_appplan\_name) | Existing App plan name | `string` | `"newdev-appplan"` | no |
+| <a name="input_function_name"></a> [function\_name](#input\_function\_name) | Function app name | `string` | `"dev1-pins-dev-fn"` | no |
+| <a name="input_location"></a> [location](#input\_location) | Azure Location | `string` | `"UK South"` | no |
+| <a name="input_rg_name"></a> [rg\_name](#input\_rg\_name) | Provide the name of existing resource group to spin the resources | `string` | `"Azure-rg"` | no |
+| <a name="input_storage_account_name"></a> [storage\_account\_name](#input\_storage\_account\_name) | Storage account name | `string` | `"tffndev1storageacc"` | no |
+| <a name="input_subnet_name"></a> [subnet\_name](#input\_subnet\_name) | Existing Subnet Name | `string` | `"newdev-subnet"` | no |
+| <a name="input_vnet_name"></a> [vnet\_name](#input\_vnet\_name) | Existing Virtual Network Name | `string` | `"newdev-vnet"` | no |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| <a name="output_appeal_service"></a> [appeal\_service](#output\_appeal\_service) | n/a |
+<!-- END_TF_DOCS -->
